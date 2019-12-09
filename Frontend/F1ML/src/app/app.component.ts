@@ -58,7 +58,26 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.95,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      },
+      strategy: {
+        number: 1,
+        pits: [{
+          lap: 3,
+          estimatedTime: 800,
+          newTyre: {
+            type: 4,
+            color: 'purple',
+            temperature: 0,
+            coefficient: 0.2
+          }
+        }]
+      }
     }, {
       id: 2,
       name: 'Sebastian',
@@ -68,7 +87,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.9,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 3,
       name: 'Charles',
@@ -78,7 +103,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.88,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 4,
       name: 'Max',
@@ -88,7 +119,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.85,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 5,
       name: 'Alexander',
@@ -98,7 +135,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.80,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 6,
       name: 'Daniel',
@@ -108,7 +151,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.75,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 7,
       name: 'Nikolas',
@@ -118,7 +167,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.70,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 8,
       name: 'Kimi',
@@ -128,7 +183,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.65,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 9,
       name: 'Antonio',
@@ -138,7 +199,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.60,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 10,
       name: 'Danil',
@@ -148,7 +215,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.55,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 11,
       name: 'Pierre',
@@ -158,7 +231,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.67,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 12,
       name: 'Carlos',
@@ -168,7 +247,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.83,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 13,
       name: 'Lando',
@@ -178,7 +263,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.48,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 14,
       name: 'Robert',
@@ -188,7 +279,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.58,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 15,
       name: 'George',
@@ -198,7 +295,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.71,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 16,
       name: 'Romain',
@@ -208,7 +311,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.73,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 17,
       name: 'Kevin',
@@ -218,7 +327,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.58,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 18,
       name: 'Sergio',
@@ -228,7 +343,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.45,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }, {
       id: 19,
       name: 'Lance',
@@ -238,7 +359,13 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       speed: 0.72,
       lap: 1,
       GPS: 0, totalDistance: 0,
-      finished: false
+      finished: false,
+      currentTyre: {
+        type: 3,
+        color: 'red',
+        temperature: 0,
+        coefficient: 0.1
+      }
     }
   ];
   coordinates = [{ x: 584, y: 340 }
@@ -456,6 +583,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
         if (driver.pit) {
           if (driver.GPS === this.trackPitLane.length) {
+            driver.currentTyre = driver.strategy.pits[driver.pitIdx].newTyre;
             driver.pit = false;
             const lastX = this.trackPitLane[this.trackPitLane.length - 1].x;
 
@@ -645,7 +773,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
   Standing() {
     const drivers = new List(this.drivers);
 
-    this.standing = drivers.OrderByDescending(o => o.lap && o.totalDistance).Select(s => s.surname).ToArray();
+    this.standing = drivers.OrderByDescending(o => o.lap && o.totalDistance).ToArray();
 
   }
 }

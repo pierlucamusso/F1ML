@@ -15,13 +15,16 @@
     </div>
     <div class="col-lg-3">
       <div style="color:honeydew !important" *ngFor="let item of standing; let i = index">
-        <h6>{{item}} - {{i + 1}}</h6>
+
+        <h6> <img src="../assets/tyre{{item.currentTyre.type}}.png" style="width: 2em;"> {{item.surname}} - {{i + 1}}</h6>
       </div>
     </div>
     <div class="col-lg-3">
-      <button class="btn btn-lg btn-success" style="min-width: 10em; margin-bottom: 1em;" (click)="Start()"><i class="fa fa-play"></i> Start</button>
-     - <br>
-      <button class="btn btn-lg btn-warning" style="min-width: 10em;" (click)="Start()"><i class="fa fa-refresh"></i> Restart</button>
+      <button class="btn btn-lg btn-success" style="min-width: 10em; margin-bottom: 1em;" (click)="Start()"><i
+          class="fa fa-play"></i> Start</button>
+      <br>
+      <button class="btn btn-lg btn-warning" style="min-width: 10em;" (click)="Start()"><i class="fa fa-refresh"></i>
+        Restart</button>
     </div>
   </div>
 </div>
