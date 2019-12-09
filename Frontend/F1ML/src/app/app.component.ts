@@ -329,7 +329,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
   originatCtx;
   canvas;
   race = [];
-  totalLaps = 10;
+  totalLaps = 5;
   finished = false;
   constructor(private zone: NgZone) { }
 
@@ -369,7 +369,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
         this.drawCoordinates(this.track[driver.GPS].x, this.track[driver.GPS].y, driver.color, context.canvas, context.ctx, driver.number);
         driver.GPS++;
-      }, 200 / driver.speed));
+      }, 20 / driver.speed));
     });
   }
 
