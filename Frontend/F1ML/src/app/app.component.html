@@ -1,0 +1,11 @@
+<!-- <h4 *ngIf="!finished" style="color: antiquewhite;"> LAP: {{lap}} / {{totalLaps}}</h4>
+<h4 *ngIf="finished" style="color: antiquewhite;"> LAP: {{totalLaps}} / {{totalLaps}}</h4>
+<h4 *ngIf="finished" style="color: red;"> Finished </h4>
+<h4 *ngIf="!finished" style="color: green;"> In Race </h4> -->
+<div id='wrapper'>
+  <canvas id="canvasbg" class="canvas" width="771" height="438" (click)="getPosition($event)"
+    style="cursor:crosshair;background:url('../assets/image.png')"></canvas>
+  <canvas *ngFor="let driver of drivers" [id]="'canvas' + driver.id" class="canvas" width="771" height="438" (click)="getPosition($event)"
+    style="cursor:crosshair;position: absolute;"></canvas>
+</div>
+<router-outlet></router-outlet>

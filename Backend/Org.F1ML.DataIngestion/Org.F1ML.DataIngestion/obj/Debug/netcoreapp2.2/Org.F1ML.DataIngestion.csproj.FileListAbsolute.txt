@@ -1,0 +1,3 @@
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.DataIngestion\obj\Debug\netcoreapp2.2\Org.F1ML.DataIngestion.csproj.CoreCompileInputs.cache
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.DataIngestion\obj\Debug\netcoreapp2.2\Org.F1ML.DataIngestion.AssemblyInfoInputs.cache
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.DataIngestion\obj\Debug\netcoreapp2.2\Org.F1ML.DataIngestion.AssemblyInfo.cs

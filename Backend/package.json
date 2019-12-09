@@ -1,0 +1,27 @@
+{
+  "name": "org.f1.ml.backend",
+  "version": "1.0.0",
+  "description": "backend for F1 data ingestion",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierlucamusso/F1ML.git"
+  },
+  "keywords": [
+    "Formula",
+    "1",
+    "Machine",
+    "Learning",
+    "Data",
+    "Ingestion"
+  ],
+  "author": "Pierluca Musso",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pierlucamusso/F1ML/issues"
+  },
+  "homepage": "https://github.com/pierlucamusso/F1ML#readme"
+}

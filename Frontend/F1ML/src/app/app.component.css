@@ -1,0 +1,30 @@
+body {
+  background-color: #30303d !important;
+  color: #fff !important;
+}
+
+#chartdiv {
+  width: 100% !important;
+  height: 600px !important;
+}
+
+.demo-theme-dark .demo-background {
+  background: #000 !important;
+}
+
+g [aria-labelledby$="-title"] {
+  visibility: hidden !important;
+}
+
+
+#wrapper{
+  position:relative;
+  width:771px;
+  height:438px;
+}
+
+.canvas{
+  position:absolute; top:0px; left:0px;
+  width:771px;
+  height:438px;
+}

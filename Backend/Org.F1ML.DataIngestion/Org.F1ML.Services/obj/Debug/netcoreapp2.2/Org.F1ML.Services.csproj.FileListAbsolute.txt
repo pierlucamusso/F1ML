@@ -1,0 +1,6 @@
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.Services\bin\Debug\netcoreapp2.2\Org.F1ML.Services.deps.json
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.Services\bin\Debug\netcoreapp2.2\Org.F1ML.Services.dll
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.Services\obj\Debug\netcoreapp2.2\Org.F1ML.Services.csprojAssemblyReference.cache
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.Services\obj\Debug\netcoreapp2.2\Org.F1ML.Services.csproj.CoreCompileInputs.cache
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.Services\obj\Debug\netcoreapp2.2\Org.F1ML.Services.AssemblyInfoInputs.cache
+C:\Users\p.musso\Documents\PROJECTS\GIT\GITHUB\F1ML\Backend\Org.F1ML.DataIngestion\Org.F1ML.Services\obj\Debug\netcoreapp2.2\Org.F1ML.Services.AssemblyInfo.cs
