@@ -14,7 +14,7 @@ am4core.useTheme(am4themes_animated);
 })
 export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
   name = 'Angular';
-  pointSize = 7;
+  pointSize = 10;
   element: Element;
   root: Element;
   drivers: Driver[] = [
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       surname: 'Bottas',
       number: 55,
       color: '#30C7D1',
-      speed: 0.6,
+      speed: 0.95,
       lap: 0,
       GPS: 0,
       finished: false
@@ -55,7 +55,167 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       surname: 'Leclerc',
       number: 21,
       color: '#FF2800',
-      speed: 0.4,
+      speed: 0.88,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 4,
+      name: 'Max',
+      surname: 'Verstappen',
+      number: 33,
+      color: '#323A53',
+      speed: 0.85,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 5,
+      name: 'Alexander',
+      surname: 'Albon',
+      number: 71,
+      color: '#323A53',
+      speed: 0.80,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 6,
+      name: 'Daniel',
+      surname: 'Ricciardo',
+      number: 4,
+      color: '#FCC22B',
+      speed: 0.75,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 7,
+      name: 'Nikolas',
+      surname: 'Hulkemberg',
+      number: 6,
+      color: '#FF2800',
+      speed: 0.70,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 8,
+      name: 'Kimi',
+      surname: 'Raikkonen',
+      number: 7,
+      color: '#FFFFFF',
+      speed: 0.65,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 9,
+      name: 'Antonio',
+      surname: 'Giovinazzi',
+      number: 8,
+      color: '#FFFFFF',
+      speed: 0.60,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 10,
+      name: 'Danil',
+      surname: 'Kviat',
+      number: 9,
+      color: '#1C1E28',
+      speed: 0.55,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 11,
+      name: 'Pierre',
+      surname: 'Gasly',
+      number: 10,
+      color: '#1C1E28',
+      speed: 0.67,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 12,
+      name: 'Carlos',
+      surname: 'Sainz',
+      number: 11,
+      color: '#FE7E03',
+      speed: 0.83,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 13,
+      name: 'Lando',
+      surname: 'Norris',
+      number: 12,
+      color: '#FE7E03',
+      speed: 0.48,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 14,
+      name: 'Robert',
+      surname: 'Kubica',
+      number: 13,
+      color: '#4BDCF8',
+      speed: 0.58,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 15,
+      name: 'George',
+      surname: 'Russel',
+      number: 14,
+      color: '#FF2800',
+      speed: 0.71,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 16,
+      name: 'Romain',
+      surname: 'Grosjean',
+      number: 15,
+      color: '#D4AF37',
+      speed: 0.73,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 17,
+      name: 'Kevin',
+      surname: 'Magnussen',
+      number: 16,
+      color: '#D4AF37',
+      speed: 0.58,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 18,
+      name: 'Sergio',
+      surname: 'Perez',
+      number: 17,
+      color: '#F3B9CB',
+      speed: 0.45,
+      lap: 0,
+      GPS: 0,
+      finished: false
+    }, {
+      id: 19,
+      name: 'Lance',
+      surname: 'Stroll',
+      number: 18,
+      color: '#F3B9CB',
+      speed: 0.72,
       lap: 0,
       GPS: 0,
       finished: false
@@ -192,7 +352,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
         ctx
       });
 
-      this.drawCoordinates(this.track[driver.GPS].x, this.track[driver.GPS].y, driver.color, canvas, ctx);
+      this.drawCoordinates(this.track[driver.GPS].x, this.track[driver.GPS].y, driver.color, canvas, ctx, driver.number);
       driver.GPS++;
       this.race.push(setInterval(() => {
         if (driver.GPS === this.track.length) {
@@ -207,9 +367,9 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
         }
         const context = new List(this.DriverContext).FirstOrDefault(w => w.driver === driver.id);
 
-        this.drawCoordinates(this.track[driver.GPS].x, this.track[driver.GPS].y, driver.color, context.canvas, context.ctx);
+        this.drawCoordinates(this.track[driver.GPS].x, this.track[driver.GPS].y, driver.color, context.canvas, context.ctx, driver.number);
         driver.GPS++;
-      }, 100 / driver.speed));
+      }, 200 / driver.speed));
     });
   }
 
@@ -276,20 +436,29 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     let curtop = 0;
     curleft += event.offsetX;
     curtop += event.offsetY;
-    this.drawCoordinates(curleft, curtop, '#FFFFFF', this.canvas, this.ctx);
+    //this.drawCoordinates(curleft, curtop, '#FFFFFF', this.canvas, this.ctx);
   }
 
-  drawCoordinates(x, y, color, canvas, ctx) {
+  drawCoordinates(x, y, color, canvas, ctx, number) {
     this.points.push({ x, y });
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const grd = ctx.createLinearGradient(0, 0, 170, 0);
-    grd.addColorStop(0, 'black');
+    grd.addColorStop(0, color);
     grd.addColorStop(1, color);
     ctx.fillStyle = grd;
 
     ctx.beginPath();
     ctx.arc(Number(x), Number(y), this.pointSize, 0, Math.PI * 2, true);
     ctx.fill();
+    ctx.beginPath();
+    ctx.fillStyle = 'white';
+    ctx.strokeStyle = 'black';
+    ctx.fillText(number, Number(x - 5), Number(y + 5));
+    ctx.fill();
+  }
+
+  CurrentLap() {
+    return 1 + new List(this.drivers).Max(m => m.lap);
   }
 }
 
