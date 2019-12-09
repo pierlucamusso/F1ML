@@ -25,7 +25,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 44,
       color: '#30C7D1',
       speed: 1,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     },
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 55,
       color: '#30C7D1',
       speed: 0.95,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 5,
       color: '#FF2800',
       speed: 0.9,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -56,7 +56,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 21,
       color: '#FF2800',
       speed: 0.88,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -66,7 +66,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 33,
       color: '#323A53',
       speed: 0.85,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -76,7 +76,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 71,
       color: '#323A53',
       speed: 0.80,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -86,7 +86,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 4,
       color: '#FCC22B',
       speed: 0.75,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -96,7 +96,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 6,
       color: '#FF2800',
       speed: 0.70,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -106,7 +106,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 7,
       color: '#FFFFFF',
       speed: 0.65,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -116,7 +116,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 8,
       color: '#FFFFFF',
       speed: 0.60,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -126,7 +126,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 9,
       color: '#1C1E28',
       speed: 0.55,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -136,7 +136,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 10,
       color: '#1C1E28',
       speed: 0.67,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -146,7 +146,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 11,
       color: '#FE7E03',
       speed: 0.83,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -156,7 +156,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 12,
       color: '#FE7E03',
       speed: 0.48,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -166,7 +166,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 13,
       color: '#4BDCF8',
       speed: 0.58,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -176,7 +176,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 14,
       color: '#FF2800',
       speed: 0.71,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -186,7 +186,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 15,
       color: '#D4AF37',
       speed: 0.73,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -196,7 +196,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 16,
       color: '#D4AF37',
       speed: 0.58,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -206,7 +206,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 17,
       color: '#F3B9CB',
       speed: 0.45,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }, {
@@ -216,7 +216,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       number: 18,
       color: '#F3B9CB',
       speed: 0.72,
-      lap: 0,
+      lap: 1,
       GPS: 0,
       finished: false
     }
@@ -458,7 +458,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   CurrentLap() {
-    return 1 + new List(this.drivers).Max(m => m.lap);
+    return new List(this.drivers).Max(m => m.lap);
   }
 }
 
