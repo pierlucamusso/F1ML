@@ -1,0 +1,49 @@
+
+<div class=" content">
+  <div class=" row">
+    <div class=" col-12">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <div class=" row">
+            <div class=" col-sm-6 text-left">
+              <h2 *ngIf="!finished"  class=" card-category" style="color: antiquewhite;"> LAP: {{CurrentLap()}} / {{totalLaps}}</h2>
+              <h2 *ngIf="finished"  class=" card-category" style="color: antiquewhite;"> LAP: {{totalLaps}} / {{totalLaps}}</h2>
+              <h2 *ngIf="finished" class=" card-title" style="color: red;"> Finished </h2>
+              <h2 *ngIf="!finished" class=" card-title" style="color: green;"> In Race </h2>
+            </div>
+            <div class=" col-sm-6">
+              <div
+                class=" btn-group btn-group-toggle float-right"
+              >
+              <button class="btn btn-lg btn-success" style="min-width: 10em; margin-right: 1em;" (click)="Start()"><i
+                class="fa fa-play"></i> Start</button>
+            <button class="btn btn-lg btn-warning" style="min-width: 10em;" (click)="Start()"><i class="fa fa-refresh"></i>
+              Restart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" card-body">
+          <div class="row">
+            <div class="col-lg-6">
+
+              <div id='wrapper'>
+                <canvas id="canvasbg" class="canvas" width="771" height="438" (click)="getPosition($event)"
+                  style="cursor:crosshair;background:url('../assets/image.png')"></canvas>
+                <canvas *ngFor="let driver of drivers" [id]="'canvas' + driver.id" class="canvas" width="771" height="438"
+                  (click)="getPosition($event)" style="cursor:crosshair;position: absolute;"></canvas>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div style="color:honeydew !important" *ngFor="let item of standing; let i = index">
+
+                <h6 [style.background-color]="item.pit ? 'red' : 'transparent'"> <img src="../assets/tyre{{item.currentTyre.type}}.png" style="width: 2em;"> {{item.surname}} - {{i + 1}} <b>{{ item.pit ? 'PIT' : ''}}</b></h6>
+              </div>
+            </div>
+            <div class="col-lg-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

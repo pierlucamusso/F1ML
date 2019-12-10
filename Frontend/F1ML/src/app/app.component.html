@@ -1,36 +1,3 @@
-<br>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-6">
-      <h4 *ngIf="!finished" style="color: antiquewhite;"> LAP: {{CurrentLap()}} / {{totalLaps}}</h4>
-      <h4 *ngIf="finished" style="color: antiquewhite;"> LAP: {{totalLaps}} / {{totalLaps}}</h4>
-      <h4 *ngIf="finished" style="color: red;"> Finished </h4>
-      <h4 *ngIf="!finished" style="color: green;"> In Race </h4>
-      <div id='wrapper'>
-        <canvas id="canvasbg" class="canvas" width="771" height="438" (click)="getPosition($event)"
-          style="cursor:crosshair;background:url('../assets/image.png')"></canvas>
-        <canvas *ngFor="let driver of drivers" [id]="'canvas' + driver.id" class="canvas" width="771" height="438"
-          (click)="getPosition($event)" style="cursor:crosshair;position: absolute;"></canvas>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div style="color:honeydew !important" *ngFor="let item of standing; let i = index">
-
-        <h6 [style.background-color]="item.pit ? 'red' : 'trasparent'"> <img src="../assets/tyre{{item.currentTyre.type}}.png" style="width: 2em;"> {{item.surname}} - {{i + 1}} <b>{{ item.pit ? 'PIT' : ''}}</b></h6>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <button class="btn btn-lg btn-success" style="min-width: 10em; margin-bottom: 1em;" (click)="Start()"><i
-          class="fa fa-play"></i> Start</button>
-      <br>
-      <button class="btn btn-lg btn-warning" style="min-width: 10em;" (click)="Start()"><i class="fa fa-refresh"></i>
-        Restart</button>
-    </div>
-  </div>
-</div>
-
-
-<br>
-
+<!--The content below is only a placeholder and can be replaced.-->
 
 <router-outlet></router-outlet>
