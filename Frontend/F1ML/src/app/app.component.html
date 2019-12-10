@@ -16,7 +16,7 @@
     <div class="col-lg-3">
       <div style="color:honeydew !important" *ngFor="let item of standing; let i = index">
 
-        <h6> <img src="../assets/tyre{{item.currentTyre.type}}.png" style="width: 2em;"> {{item.surname}} - {{i + 1}}</h6>
+        <h6 [style.background-color]="item.pit ? 'red' : 'none'"> <img src="../assets/tyre{{item.currentTyre.type}}.png" style="width: 2em;"> {{item.surname}} - {{i + 1}} <b>{{ item.pit ? 'PIT' : ''}}</b></h6>
       </div>
     </div>
     <div class="col-lg-3">
